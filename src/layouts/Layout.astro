@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import Header from '../components/Header.astro'
 ---
 
 <!doctype html>
@@ -13,15 +14,9 @@ import '../styles/global.css'
 		<title>Guillermo Laborda | Desarrollador FullStack</title>
 	</head>
 	<body>
+    <Header />
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+
