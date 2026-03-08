@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" width="420" height="220">
+  
+  <defs>
+    <!-- Gradiente moderno -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF"></stop>
+      <stop offset="50%" stop-color="#7C7CFF"></stop>
+      <stop offset="100%" stop-color="#00FFA3"></stop>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Contenedor -->
+  <rect x="10" y="10" width="400" height="200" rx="24" fill="none" stroke="url(#grad)" stroke-width="3" filter="url(#glow)"></rect>
+
+  <!-- Iniciales centradas -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Google Sans, Product Sans, Arial, sans-serif" font-size="96" font-weight="600" letter-spacing="6" fill="url(#grad)" filter="url(#glow)">
+    GL
+  </text>
+
+</svg>

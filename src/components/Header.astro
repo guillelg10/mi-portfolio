@@ -1,6 +1,6 @@
-<header class="display:flex">
+<header class="site-header">
 
-  <nav>
+  <nav class="nav">
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/education">Education</a>
@@ -10,7 +10,52 @@
     <a href="/skills">Skills</a>
   </nav>
 
-  <div class="iniciales" id="iniciales">
-    <a style="color: rgb(255, 255, 255);">GL<a>
+  <div class="iniciales">
+    <img src="/logo.svg" alt="Guillermo Laborda" style="object-fit: contain;" />
   </div>
 </header>
+
+<style>
+  .site-header {
+    
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .nav {
+    display: flex;
+    gap: 1rem;
+    width: 50vw;
+    justify-content: space-between;
+   
+    
+  }
+
+.iniciales {
+  display: flex;
+  height: 10dvb;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+}
+
+.iniciales img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+  a{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color:rgb(191, 214, 222);
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover{
+    background-color: aliceblue;
+    color: rgb(5, 13, 13);
+  }
+</style>
