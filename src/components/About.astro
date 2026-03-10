@@ -1,0 +1,64 @@
+<section id="about" class="about">
+  <h2 class="title">Sobre mí</h2>
+  <div class="about__content">
+    <p class="about__text">
+      Soy <span class="accent">Guillermo Laborda Gómez</span>, Full-Stack Developer 
+      graduado en CFGS DAW con pasión por crear experiencias web modernas y funcionales. 
+      Con 27 años y una sólida base tanto en frontend como en backend, disfruto 
+      transformando ideas en productos digitales reales.
+    </p>
+    <p class="about__text">
+      Me gusta escribir código limpio, aprender nuevas tecnologías y enfrentarme 
+      a retos que me hagan crecer como desarrollador.
+    </p>
+  </div>
+</section>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    cursor: default;
+  }
+
+  .title::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(191, 214, 222);
+    border-radius: 9999px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .title:hover::after {
+    width: 100%;
+  }
+
+
+
+  .about__text {
+    color: #a0a0b0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .accent {
+    color: rgb(191, 214, 222);
+    font-weight: 600;
+  }
+</style>
+

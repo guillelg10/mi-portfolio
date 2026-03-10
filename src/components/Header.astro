@@ -1,13 +1,15 @@
+---
+import navLinks from '../data/navLinks.json'
+---
+
 <header class="site-header">
 
   <nav class="nav">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/education">Education</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact">Contact</a>
-    <a href="/social">Social Media</a>
-    <a href="/skills">Skills</a>
+    {
+      navLinks.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))
+    }
   </nav>
 
   <div class="iniciales">
@@ -19,16 +21,20 @@
   .site-header {
     
     display: flex;
-    width: 100vw;
+    width: 90vw;
     justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(46, 44, 44, 0.7);
+    border-bottom: 0.1rem solid rgb(9, 157, 206);
+
   }
 
   .nav {
     display: flex;
     gap: 1rem;
-    width: 50vw;
+    width: 75vw;
     justify-content: space-between;
    
     
